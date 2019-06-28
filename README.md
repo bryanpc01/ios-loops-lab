@@ -226,7 +226,11 @@ repeat {
     i += 1
 } while i <= 10
 ```
-**Loop one checks if the condition is true before executing the body of the loop continuing until the condition is false. Loop two executes the body of the loop and then checks to continue looping or not. Both loops will have the same output because both loops share a condition that is initially true.**
+**Loop one checks if the condition is true before executing the body of the loop continuing until the condition is false.**
+
+**Loop two executes the body of the loop and then checks to continue looping or not.**
+
+**Both loops will have the same output because both loops share a condition that is initially true.**
 
 ***
 ## Question 16
@@ -234,6 +238,7 @@ repeat {
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 
 **Break: leaves the loop when this is called. Use when you want to exit a loop**
+
 **Continue: leaves the current iteration of the loop. Use when you want to skip the running of code at a particular point in a loop.**
 
 ***
@@ -250,16 +255,16 @@ for i in 1...10 {
 }
 ```
 
-[x]1
-[x]2
-[x]3
-[]4
-[]5
-[]6
-[]7
-[x]8
-[x]9
-[x]10
+- [x] 1
+- [x] 2
+- [x] 3
+- [ ] 4
+- [ ] 5
+- [ ] 6
+- [ ] 7
+- [x] 8
+- [x] 9
+- [x] 10
 
 ***
 ## Question 18
@@ -275,16 +280,16 @@ for i in 1...10 {
 }
 ```
 
-[x]1
-[x]2
-[x]3
-[]4
-[]5
-[]6
-[]7
-[]8
-[]9
-[]10
+- [x] 1
+- [x] 2
+- [x] 3
+- [ ] 4
+- [ ] 5
+- [ ] 6
+- [ ] 7
+- [ ] 8
+- [ ] 9
+- [ ] 10
 
 ***
 ## Question 19
