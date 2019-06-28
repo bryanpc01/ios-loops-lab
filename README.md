@@ -307,15 +307,41 @@ outerloop: for x in 1...3 {
 }
 ```
 
+x = 1, y = 1
+
+x = 2, y = 1
+
+x = 3, y = 1
+
+**The inner loop does not go pass one iteration because the continue to outerloop when y == 2 prevents it.**
+
 ***
 ## Question 20
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** x and y are both integers.
 
+```swift
+for x in 0...10 {
+    for y in 0...10 {
+        print("(\(x), \(y))")
+    }
+}
+```
+
 ***
 ## Question 21
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** the difference of x and y is at least 5, and x and y are both integers.
+
+```swift
+for x in 0...10 {
+    for y in 0...10 {
+        if (x - y > 5) || (y - x > 5) {
+            print("(\(x), \(y))")
+        }
+    }
+}
+```
 
 ***
 ## Question 22
@@ -333,7 +359,11 @@ Output:
 16
 25
 ```
-
+```swift
+for n in 1...N {
+    print(n * n)
+}
+```
 ***
 ## Question 23
 
@@ -363,5 +393,17 @@ Try printing a single line of * first.
 
 Hint 2
 You can use print("") to print an empty line.
+
+```swift
+var xLine = ""
+
+for _ in 1...N {
+    for _ in 1...N {
+        xLine += "*"
+    }
+    print(xLine)
+    xLine = ""
+}
+```
 
 ***
