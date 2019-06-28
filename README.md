@@ -14,30 +14,74 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+```swift
+for number in 1...150 {
+    print(number)
+}
+```
+
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+
+```swift
+for number in 143..<159 {
+    print(number)
+}
+````
 
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
+```swift
+for number in 15...80 {
+    if (number % 2 == 0) {
+        print(number)
+    }
+}
+```
+
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+
+```swift
+for number in 19...51 {
+    if !(number % 2 == 0) {
+        print(number)
+    }
+}
+```
 
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+```swift
+for number in 2..<100 {
+    if (number % 10 == 5){
+        print(number)
+    }
+}
+```
+
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
+```swift
+for number in 1...40 {
+    if (number % 10 == 7){
+        print(number)
+    }
+}
+```
 
 ***
 ## Question 7
@@ -46,12 +90,28 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+```swift
+for number in 20...150 {
+    if (number % 3 == 0){
+        print(number)
+    }
+}
+```
+
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
+```swift
+for number in 20...150 {
+    if (number % 6 == 0){
+        print(number)
+    }       
+}
+```
 
 ***
 ## Question 9
@@ -60,12 +120,28 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+```swift
+for number in 20...150 {
+    if (number % 10 == 4){
+        print(number)
+    }
+}
+```
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+```swift
+for number in 20...150 {
+    if number == 31 || number == 35 || number == 40 || number == 60  {
+        print(number)
+    }
+}
+```
 
 ***
 ## Question 11
@@ -78,9 +154,8 @@ var i = 5
 while (i > 3) {
     i += 1
 }
-
-// Your explanation here
 ```
+**This is an infinite loop. The while condition is true at run time and there is no logic to halt the loop**
 
 ***
 ## Question 12
@@ -91,6 +166,7 @@ Change the code below to make the loop stop executing when i reaches 9.
 var i = 5
 
 while (i > 3) {
+    if i == 9 {break}
     i += 1
 }
 ```
@@ -102,8 +178,11 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 
 ```swift
 var i = 5
+let numberOfTimesToRun = 1000
+let whenToHalt = numberOfTimesToRun + i
 
 while (i > 3) {
+    if i == whenToHalt {break}
     i += 1
 }
 ```
@@ -115,10 +194,15 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 
 ```swift
 var i = 5
+let numberOfTimesToRun = 1000
+let whenToHalt = numberOfTimesToRun + i
 
 while (i > 3) {
+    if i == whenToHalt {break}
     i += 1
 }
+
+if i % 2 == 0 {print(i)}
 ```
 
 ***
@@ -142,11 +226,15 @@ repeat {
     i += 1
 } while i <= 10
 ```
+**Loop one checks if the condition is true before executing the body of the loop continuing until the condition is false. Loop two executes the body of the loop and then checks to continue looping or not. Both loops will have the same output because both loops share a condition that is initially true.**
 
 ***
 ## Question 16
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
+
+**Break: leaves the loop when this is called. Use when you want to exit a loop**
+**Continue: leaves the current iteration of the loop. Use when you want to skip the running of code at a particular point in a loop.**
 
 ***
 ## Question 17
@@ -162,16 +250,16 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
+[x]1
+[x]2
+[x]3
 []4
 []5
 []6
 []7
-[]8
-[]9
-[]10
+[x]8
+[x]9
+[x]10
 
 ***
 ## Question 18
@@ -187,9 +275,9 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
+[x]1
+[x]2
+[x]3
 []4
 []5
 []6
