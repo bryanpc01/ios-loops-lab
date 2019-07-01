@@ -1,13 +1,8 @@
 import UIKit
 
 
-var i = 5
-let numberOfTimesToRun = 1000
-let whenToHalt = numberOfTimesToRun + i
-
-while (i > 3) {
-    if i == whenToHalt {break}
-    i += 1
+for x in 0...10 {
+    for y in 0...10 {
+        print((x,y))
+    }
 }
-
-print(i)

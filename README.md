@@ -307,7 +307,7 @@ Write code that prints out all the points in the area bounded by (0,0), (10,0), 
 ```swift
 for x in 0...10 {
     for y in 0...10 {
-        print("(\(x), \(y))")
+        print((x,y))
     }
 }
 ```
